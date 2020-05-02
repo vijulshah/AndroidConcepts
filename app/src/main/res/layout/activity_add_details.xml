@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AddDetails"
+    android:background="@color/HomeBgColour"
+    android:orientation="vertical">
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:text="Add Details"
+        android:background="#000"
+        android:textSize="30sp"
+        android:textColor="#fff"
+        android:textStyle="bold"
+        android:gravity="center"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="5dp"
+        android:background="#79ffffff"
+        android:layout_marginTop="10dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="30dp"
+        android:padding="30dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="2">
+
+            <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/edt_fn"
+                android:layout_weight="1"
+                android:background="@android:drawable/editbox_background"
+                android:textSize="18sp"
+                android:padding="15dp"
+                android:hint="First Name"/>
+
+            <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/edt_ln"
+                android:layout_weight="1"
+                android:background="@android:drawable/editbox_background"
+                android:textSize="18sp"
+                android:padding="15dp"
+                android:hint="Last Name"/>
+
+        </LinearLayout>
+
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/edt_email"
+            android:layout_marginTop="10dp"
+            android:background="@android:drawable/editbox_background"
+            android:textSize="18sp"
+            android:padding="15dp"
+            android:hint="Email id"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/edt_contactno"
+            android:layout_marginTop="10dp"
+            android:background="@android:drawable/editbox_background"
+            android:textSize="18sp"
+            android:padding="15dp"
+            android:hint="Contact no"/>
+
+        <RadioGroup
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/rg_gender"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/rbtn_male"
+                android:layout_margin="10dp"
+                android:buttonTint="#fff"
+                android:text="Male"
+                android:textColor="#fff"
+                android:textSize="18sp"/>
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/rbtn_female"
+                android:layout_margin="10dp"
+                android:buttonTint="#fff"
+                android:text="Female"
+                android:textColor="#fff"
+                android:textSize="18sp"/>
+
+        </RadioGroup>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/btn_add"
+            android:padding="15dp"
+            android:text="Add"
+            android:textSize="18sp"/>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/btn_cancel"
+            android:padding="15dp"
+            android:text="Cancel"
+            android:textSize="18sp"/>
+
+    </LinearLayout>
+
+</LinearLayout>

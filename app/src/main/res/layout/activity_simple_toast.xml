@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SimpleToast"
+    android:background="@color/HomeBgColour"
+    android:orientation="vertical"
+    android:weightSum="3">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:text="Simple Toast"
+        android:background="#000"
+        android:textSize="30sp"
+        android:textColor="#fff"
+        android:textStyle="bold"
+        android:gravity="center"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="5dp"
+        android:layout_marginTop="10dp"
+        android:background="#79ffffff" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:padding="10dp"
+        android:layout_marginTop="150dp"
+        android:orientation="horizontal"
+        android:weightSum="2">
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/btn_toast_short"
+            android:text="Simple Toast \nShort Duration"
+            android:layout_weight="1"
+            android:textSize="15sp"
+            android:padding="20dp"/>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/btn_toast_long"
+            android:text="Simple Toast \nLong Duration"
+            android:layout_weight="1"
+            android:textSize="15sp"
+            android:padding="20dp"/>
+
+    </LinearLayout>
+
+</LinearLayout>

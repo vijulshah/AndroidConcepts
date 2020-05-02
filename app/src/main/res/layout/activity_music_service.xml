@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MusicService"
+    android:orientation="vertical"
+    android:background="@color/HomeBgColour">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:text="Music Service"
+        android:background="@color/TopicsBgColor"
+        android:textSize="25sp"
+        android:textColor="#fff"
+        android:textStyle="bold"
+        android:gravity="center"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="5dp"
+        android:layout_marginTop="10dp"
+        android:background="#79ffffff">
+    </View>
+
+   <LinearLayout
+       android:layout_width="match_parent"
+       android:layout_height="match_parent"
+       android:orientation="vertical"
+       android:padding="10dp">
+
+       <ImageView
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:id="@+id/iv_music_img"
+           android:src="@drawable/music_img"
+
+           />
+       <SeekBar
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:id="@+id/seekbar_music"
+           android:background="#fff"
+           android:layout_marginTop="20dp"
+           android:layout_marginBottom="10dp"/>
+
+       <LinearLayout
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:orientation="horizontal"
+           android:weightSum="3">
+
+           <ImageButton
+               android:layout_width="0dp"
+               android:layout_height="wrap_content"
+               android:id="@+id/btn_previous"
+               android:layout_weight="1"
+               android:src="@drawable/ic_previous"/>
+
+           <ImageButton
+               android:layout_width="0dp"
+               android:layout_height="wrap_content"
+               android:id="@+id/btn_play"
+               android:layout_weight="1"
+               android:src="@drawable/ic_play"/>
+
+           <ImageButton
+               android:layout_width="0dp"
+               android:layout_height="wrap_content"
+               android:id="@+id/btn_next"
+               android:layout_weight="1"
+               android:src="@drawable/ic_next"/>
+
+       </LinearLayout>
+
+   </LinearLayout>
+</LinearLayout>

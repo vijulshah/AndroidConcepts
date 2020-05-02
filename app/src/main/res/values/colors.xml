@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#48000000</color>
+    <color name="colorPrimaryDark">#6e6e6e</color>
+    <color name="colorAccent">#000000</color>
+    <color name="colorDateAccent">#ffa807</color>
+    <color name="colorSeekBar">#e7e6e6</color>
+    <color name="HomeBgColour">#313131</color>
+    <color name="TopicsBgColor">#000</color>
+    <color name="Toggle_Off">#ba0d0d</color>
+    <color name="Toggle_On">#0da721</color>
+</resources>

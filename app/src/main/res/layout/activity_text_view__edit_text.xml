@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".TextView_EditText"
+    android:background="@color/HomeBgColour"
+    android:orientation="vertical"
+    android:weightSum="3">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Text View - Edit Text"
+        android:textSize="30sp"
+        android:textColor="#fff"
+        android:padding="10dp"
+        android:background="#000"
+        android:textStyle="bold"
+        android:gravity="center"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="5dp"
+        android:layout_marginTop="10dp"
+        android:background="#79ffffff">
+    </View>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Edit Text :"
+        android:layout_marginTop="10dp"
+        android:padding="10dp"
+        android:textColor="#fff"
+        android:textSize="20sp"
+        android:gravity="center"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:orientation="horizontal"
+        android:weightSum="1">
+
+        <EditText
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.75"
+            android:id="@+id/edttxt_here"
+            android:background="@android:drawable/editbox_background_normal"
+            android:padding="20dp"
+            android:textSize="15sp"
+            android:textColorHint="#000"
+            android:hint="Some Text Here"/>
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.25"
+            android:background="@android:drawable/btn_default"
+            android:id="@+id/btn_edt_txt_done"
+            android:textSize="15sp"
+            android:padding="20dp"
+            android:text="Done" />
+
+    </LinearLayout>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:id="@+id/btn_this_page"
+        android:padding="20dp"
+        android:textSize="15sp"
+        android:text="Show Data"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tvname"
+        android:visibility="invisible"
+        android:text="Text View :"
+        android:padding="10dp"
+        android:textSize="20sp"
+        android:textColor="#fff" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:padding="10dp"
+        android:textSize="20sp"
+        android:visibility="invisible"
+        android:textColor="#000"
+        android:id="@+id/txtview_show"
+        android:layout_marginTop="5dp"
+        android:background="#5affffff"/>
+
+</LinearLayout>
